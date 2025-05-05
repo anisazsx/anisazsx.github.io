@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELLO GUYS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body 
+style="background-image: 
+url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);" 
+  class="flex justify-center items-center h-screen bg-cover bg-center">
+<div class="bg-white border px-10 py-8 border-4 border-gray-300 shadow-lg shadow-blue-300 rounded-xl text-center animate__animated 
+animate__backInDown m-8 w-80"
+id="kartu">
+    <h1 class="text-3xl">dari aku</h1>
+    <h1 class="text-4xl text-blue-500 font-bold animate__animated animate__pulse animate__infinite">
+         untuk kalian 
+    </h1>
+    <button class="p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full animate__animated 
+    animate__delay-1s animate__tada" 
+    onclick="ubahKartu()"
+    >
+    klik disini!
+    </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+<script>
+   confetti({
+  particleCount: 100,
+  spread: 70,
+  origin: { y: 0.6 },
+}); 
+let kartu = document.getElementById("kartu");
+function ubahKartu() {
+    kartu.innerHTML = `<h1 class="font-semibold text-wrap animate__animated animate__zoomIn">
+    guys terima kasih atas kebersamaan, dukungan kalian, afirmasi positif kalian, dan kebaikan kalian selama ini.
+    gue benar-benar menghargai setiap momen yang udah kita lewati bareng. 
+    kalau ada perkataan atau sikap gue yang pernah menyinggung atau membuat kalian kurang nyaman, gue minta maaf yaa. 
+    nggak ada niat buruk, dan gue harap kita tetap bisa saling jaga hubungan baik ke depannya.
+    sampai ketemu di kehidupan sukses guys
+</h1>
+<h2 class="mt-3 animate__animated animate__fadeIn">
+    - dari : anisazsx -
+</h2>
+<button 
+        class="p-2 bg-pink-600 text-white rounded mt-5 hover:bg-pink-900 transition ease-in w-full animate__animated 
+        animate__delay-1s animate__tada" 
+        onclick="refresh()"
+>
+ thankyou guys!
+</button>
+`;
+}
+function refresh() {
+location.reload();
+}
+</script>
+</body>
+</html>
